@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
 class App extends React.Component {
@@ -190,43 +190,42 @@ class App extends React.Component {
               </p>
             </article>
           </div>
-
-          <footer className="scene">
-            <article className="content">
-              <div id="socialmedia">
-                <ul className="group">
-                  <li>
-                    <a href="https://twitter.com">
-                      <img
-                        className="icon"
-                        src="https://landonhotel.com/images/socialmedia/twitter.png"
-                        alt="icon for twitter"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="http://www.facebook.com">
-                      <img
-                        className="icon"
-                        src="https://landonhotel.com/images/socialmedia/facebook.png"
-                        alt="icon for facebook"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="http://www.youtube.com">
-                      <img
-                        className="icon"
-                        src="https://landonhotel.com/images/socialmedia/youtube.png"
-                        alt="icon for youtube"
-                      />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </article>
-          </footer>
         </main>
+        <footer className="scene">
+          <article className="content">
+            <div id="socialmedia">
+              <ul className="group">
+                <li>
+                  <a href="https://twitter.com">
+                    <img
+                      className="icon"
+                      src="https://landonhotel.com/images/socialmedia/twitter.png"
+                      alt="icon for twitter"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="http://www.facebook.com">
+                    <img
+                      className="icon"
+                      src="https://landonhotel.com/images/socialmedia/facebook.png"
+                      alt="icon for facebook"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="http://www.youtube.com">
+                    <img
+                      className="icon"
+                      src="https://landonhotel.com/images/socialmedia/youtube.png"
+                      alt="icon for youtube"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </footer>
       </div>
     );
   }
