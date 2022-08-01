@@ -1,7 +1,23 @@
-import React from 'react';
-import welcomeGalleryData from './data/welcome_gallery.json';
+import React, {useState, useEffect} from 'react';
+import * as Constants from '../constants';
+// import welcomeGalleryData from './data/welcome_gallery.json';
 
 const Welcome = () => {
+	const [welcomeGalleryData, setWelcomeGalleryData] = useState([]); //state variable
+
+	const loadWelcomeGalleryData = async () => {
+		//Query the API gateway
+		const resp = await fetch(`${Constants.APIURL}welcomeGallery`);
+		let jsonData = await resp.json();
+
+		// Assign response data to the state variable
+		setWelcomeGalleryData(jsonData);
+	};
+
+	useEffect(() => {
+		// Load the menu links data from the API gateway
+		loadWelcomeGalleryData();
+	}, []);
 	return (
 		<div className="scene" id="welcome">
 			<article className="content">
